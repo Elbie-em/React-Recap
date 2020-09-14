@@ -7,3 +7,5 @@ const HelloJSX = () => {
     </div>
   )
 }
+
+export default HelloJSX
