@@ -8,4 +8,8 @@ const HelloJSX = () => {
   )
 }
 
-export default HelloJSX
+const HelloNonJSX  = () => {
+  return React.createElement('div',null,React.createElement('h1',null,'Hello from Non JSX element'))
+}
+
+export { HelloJSX, HelloNonJSX }
