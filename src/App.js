@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import { HelloJSX, HelloNonJSX } from './components/Hello'
+import Greet from './components/Greet'
 
 const App = () => {
   return (
     <div className="App">
-      <HelloJSX />
-      <HelloNonJSX />
+      <Greet name="JavaScript"/>
+      <Greet name="React"/>
+      <Greet name="Redux"/>
     </div>
   );
 }
