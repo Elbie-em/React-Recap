@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Greet from './components/Greet'
+import Welcome from './components/Welcome'
 
 const App = () => {
   return (
@@ -12,6 +13,8 @@ const App = () => {
         <button onClick={() => alert("I am a Child")}>I am a Child Button, Click Me</button>
       </Greet>
       <Greet name="Redux" level="Node"/>
+
+      <Welcome name="Coding" level="Parent"/>
     </div>
   );
 }
