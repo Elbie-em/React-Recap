@@ -5,9 +5,9 @@ import Greet from './components/Greet'
 const App = () => {
   return (
     <div className="App">
-      <Greet name="JavaScript"/>
-      <Greet name="React"/>
-      <Greet name="Redux"/>
+      <Greet name="JavaScript" level="Root"/>
+      <Greet name="React" level="Node"/>
+      <Greet name="Redux" level="Node"/>
     </div>
   );
 }
