@@ -9,7 +9,10 @@ class Message extends React.Component {
   }
   render() {
     return(
-      <h1>{this.state.message}</h1>
+      <div>
+        <h1>{this.state.message}</h1>
+        <button>Subscribe</button>
+      </div>
     )
   }
 }
