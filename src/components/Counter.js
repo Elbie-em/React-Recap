@@ -17,9 +17,9 @@ class Counter extends Component {
   }
 
   incrementH () {
-    this.setState((prevState) => {
+    this.setState(prevState => ({
       count: prevState.count + 1
-    })
+    }))
   }
 
   incrementByFive () {
