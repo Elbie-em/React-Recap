@@ -16,12 +16,27 @@ class Counter extends Component {
     })
   }
 
+  incrementH () {
+    this.setState((prevState) => {
+      count: prevState.count + 1
+    })
+  }
+
+  incrementByFive () {
+    this.incrementH()
+    this.incrementH()
+    this.incrementH()
+    this.incrementH()
+    this.incrementH()
+  }
+
   render() {
     return (
       <div>
       <br />
       <h2>Count: {this.state.count}</h2>
       <button onClick={() => this.increment()}>Increment</button>
+      <button onClick={() => this.incrementByFive()}>Increment</button>
       </div>
     )
   }
