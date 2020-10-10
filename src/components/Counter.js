@@ -36,7 +36,8 @@ class Counter extends Component {
       <br />
       <h2>Count: {this.state.count}</h2>
       <button onClick={() => this.increment()}>Increment</button>
-      <button onClick={() => this.incrementByFive()}>Increment</button>
+      <br />
+      <button onClick={() => this.incrementByFive()}>Increment 5</button>
       </div>
     )
   }
