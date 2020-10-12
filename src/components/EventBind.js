@@ -7,6 +7,7 @@ class EventBind extends Component {
     this.state = {
        message: "Hello World, Nice to meet you"
     }
+    this.clickHandler = this.clickHandler.bind(this);
   }
 
   clickHandler () {
@@ -21,7 +22,7 @@ class EventBind extends Component {
         <h2>{this.state.message}</h2>
         <br />
         <br />
-        <button onClick={clickHandler}>Bind Click Me</button>
+        <button onClick={this.clickHandler}>Bind Click Me</button>
       </div>
     )
   }
