@@ -15,6 +15,12 @@ class EventBind extends Component {
       message: "Goodbye world, it was a pleasure"
     })
   }
+
+  handleClick = () => {
+    this.setState({
+      message: "Goodbye world, it wasn't a pleasure"
+    })
+  }
   
   render() {
     return (
@@ -23,6 +29,9 @@ class EventBind extends Component {
         <br />
         <br />
         <button onClick={this.clickHandler}>Bind Click Me</button>
+        <br />
+        <br />
+        <button onClick={this.handleClick}>Bind Click Me II</button>
       </div>
     )
   }
