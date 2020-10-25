@@ -18,7 +18,7 @@ class ParentComp extends Component {
   render() {
     return (
       <div>
-        <ChildComp />
+        <ChildComp handleClick={this.greetParent}/>
       </div>
     )
   }
