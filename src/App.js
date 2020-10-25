@@ -1,20 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import FunctionClick from './components/FunctionClick'
-import ClassClick from './components/ClassClick'
-import EventBind from './components/EventBind'
-
+import ParentComp from './components/ParentComp'
 
 const App = () => {
   return (
     <div className="App">
-      <EventBind />
       <br />
       <br />
-      <FunctionClick />
-      <br />
-      <br />
-      <ClassClick />
+      <ParentComp />
     </div>
   );
 }
