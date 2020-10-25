@@ -7,6 +7,7 @@ class ParentComp extends Component {
     this.state = {
        parentName: "Boss Dawg"
     }
+    this.greetParent = this.greetParent.bind(this)
   }
 
   greetParent() {
