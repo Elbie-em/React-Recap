@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ChildComp from './ChildComp'
 
 class ParentComp extends Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class ParentComp extends Component {
   render() {
     return (
       <div>
-        
+        <ChildComp />
       </div>
     )
   }
