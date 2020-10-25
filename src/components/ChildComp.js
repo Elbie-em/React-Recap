@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-const ChildComp = () => {
+const ChildComp = ({handleClick}) => {
   return (
     <div>
-      <button>Greet the Boss</button>
+      <button onClick={handleClick}>Greet the Boss</button>
     </div>
   )
 }
