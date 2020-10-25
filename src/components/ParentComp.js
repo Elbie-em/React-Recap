@@ -5,8 +5,12 @@ class ParentComp extends Component {
     super(props)
   
     this.state = {
-       
+       parentName: "Boss Dawg"
     }
+  }
+
+  greetParent() {
+    alert(`Hi Papa ${this.state.parentName}`)
   }
   
   render() {
