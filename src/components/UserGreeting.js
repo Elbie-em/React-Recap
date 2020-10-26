@@ -10,12 +10,20 @@ class UserGreeting extends Component {
   }
   
   render() {
-    return (
-      <div>
-        <h1>Welcome to Guest</h1>
-        <h1>Welcome to React</h1>
-      </div>
-    )
+    if (this.state.isLoggedIn){
+      return (
+        <div>
+          <h1>Welcome to React</h1>
+        </div>
+      )
+    }else{
+      return (
+        <div>
+          <h1>Welcome to Guest</h1>
+        </div>
+      )
+    }
+    
   }
 }
 
