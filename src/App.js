@@ -1,13 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import ParentComp from './components/ParentComp'
+import UserGreeting from './components/UserGreeting'
 
 const App = () => {
   return (
     <div className="App">
       <br />
       <br />
-      <ParentComp />
+      <UserGreeting />
     </div>
   );
 }
