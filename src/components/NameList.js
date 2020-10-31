@@ -27,13 +27,12 @@ const NameList = () => {
     }
   ]
 
+  const langList =  langs.map((lang, index) => <h2 key={index}>{lang}</h2> )
   const personList = persons.map((person) => <Person key={person.id} person={person}/>)
 
   return (
     <div>
-      {
-        langs.map((lang) => <h2>{lang}</h2> )
-      }
+      {langList}
     <div>
       {personList}
     </div>
