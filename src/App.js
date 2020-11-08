@@ -1,15 +1,14 @@
 import './App.css';
 import UserGreeting from './components/UserGreeting'
-import NameList from './components/NameList'
+import ClickCounter from './components/ClickCounter'
 
 const App = () => {
   return (
     <div className="App">
       <br />
       <br />
-      <UserGreeting />
+      <ClickCounter />
       <br />
-      <NameList />
     </div>
   );
 }
