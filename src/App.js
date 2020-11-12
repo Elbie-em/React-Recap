@@ -1,5 +1,6 @@
 import './App.css';
 import PressCounter from './components/PressCounter';
+import SwipeCounter from './components/SwipeCounter';
 
 const App = () => {
   return (
@@ -7,6 +8,7 @@ const App = () => {
       <br />
       <PressCounter />
       <br />
+      <SwipeCounter />
     </div>
   );
 }
