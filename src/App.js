@@ -1,15 +1,11 @@
 import './App.css';
-import UserGreeting from './components/UserGreeting'
-import ClickCounter from './components/ClickCounter'
-import HoverCounter from './components/HoverCount';
+import PressCounter from './components/PressCounter';
 
 const App = () => {
   return (
     <div className="App">
       <br />
-      <HoverCounter />
-      <br />
-      <ClickCounter />
+      <PressCounter />
       <br />
     </div>
   );
