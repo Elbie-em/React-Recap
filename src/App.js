@@ -11,7 +11,7 @@ const App = () => {
       <br />
       <SwipeCounter />
       <br />
-      <User name='React'/>
+      <User render={(isLoggedIn) => isLoggedIn ? 'React' : 'Guest'}/>
     </div>
   );
 }
