@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 
-export class user extends Component {
-  render() {
-    return (
+class User extends Component {
+  render() { 
+    const {render} = this.props
+      return (
       <div>
-        <h3>{this.props.name}</h3>
+        <h3>{render(true)}</h3>
       </div>
     )
   }
 }
 
-export default user
+export default User
