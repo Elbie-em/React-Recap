@@ -1,6 +1,7 @@
 import './App.css';
 import PressCounter from './components/PressCounter';
 import SwipeCounter from './components/SwipeCounter';
+import User from './components/User'
 
 const App = () => {
   return (
@@ -9,6 +10,8 @@ const App = () => {
       <PressCounter />
       <br />
       <SwipeCounter />
+      <br />
+      <User name='React'/>
     </div>
   );
 }
