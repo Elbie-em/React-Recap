@@ -21,9 +21,13 @@ class PostList extends Component {
   }
   
   render() {
-    return (
+    const { posts } = this.state
+    return ( 
       <div>
         <h3>Lists of Posts</h3>
+        {
+          posts.length ? posts.map(post => <div key={post.id}> {post.title} </div>): null
+        }
       </div>
     )
   }
