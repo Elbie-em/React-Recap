@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 
 class PostForm extends Component {
   constructor(props) {
@@ -16,20 +17,27 @@ class PostForm extends Component {
       [e.target.name]: e.target.value
     })
   }
+
+  submitHandler = (e) => {
+    e.preventDefault();
+    console.log(this.state)
+  }
   
   render() {
+    const {userId,title,body} = this.state
     return (
       <div>
-        <form>
+        <form onSubmit={this.submitHandler}> 
           <div>
-            <input type="text" name="userId"/>
+            <input type="text" name="userId" onChange={this.changeHandler}/>
           </div>
           <div>
-            <input type="text" name="title" />
+            <input type="text" name="title" onChange={this.changeHandler}/>
           </div>
           <div>
-            <textarea type="text" name="body" />
+            <textarea type="text" name="body" onChange={this.changeHandler}/>
           </div>
+          <button type='submit'>Submit</button>
         </form>
       </div>
     )
